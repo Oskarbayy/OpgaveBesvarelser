@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpgaveBesvarelser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6e2340c75cef6db1e8fc7eea5b8746f2f443ba3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c86c54e2af5e1d744f9f24d7e59f7c4bee8466b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpgaveBesvarelser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpgaveBesvarelser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -43,7 +43,6 @@ partial class Program
         { 10000, 279 },
         { 15000, 372 },
         { 20000, 541 }
-
     };
 
     static void Porto()

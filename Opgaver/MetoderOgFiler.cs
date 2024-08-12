@@ -30,17 +30,74 @@
         }
     }
 
+    private static void addFile()
+    {
+        Console.Write("Hvad skal filen hedde:");
+        string fileName = Console.ReadLine();
+
+        Console.Write("\nHvad skal filen indholde:");
+        string input = Console.ReadLine();
+
+        File.WriteAllText(@"FilManipulation\"+fileName, input);
+
+        Console.WriteLine("Addet filen '"+fileName+"' til systemet");
+
+        PromptForKeyPress();
+    }
+
+    private static void deleteFile()
+    {
+        Console.Write("Hvilken fil vil du slette?");
+        string fileName = Console.ReadLine();
+
+        if (File.Exists(@"FilManipulation\" + fileName))
+        {
+            File.Delete(@"FilManipulation\" + fileName);
+            Console.WriteLine("Har nu slettet '" + fileName + "'");
+        } else
+        {
+            Console.WriteLine("\nDer er ikke nogen '" + fileName + "' fil!");
+        }
+
+    }
+
+    private static void displayFiles()
+    {
+        Console.WriteLine("Opgave 6: Alle filer i systemet");
+        string[] files = Directory.GetFiles("FilManipulation");
+        foreach (string fil in files)
+        {
+            Console.WriteLine(fil);
+        }
+        PromptForKeyPress();
+    }
+
+    private static void addFolder()
+    {
+
+    }
+
+    private static void searchFile()
+    {
+
+    }
+
+    private static void smthElse()
+    {
+        Console.WriteLine("IDEK");
+    }
+
     private static void Opgave9()
     {
         // Define the menu options with corresponding functions
         var options = new Dictionary<string, Action>
             {
-                { "Add file", Opgave1 },
-                { "Delete file", Opgave2 },
-                { "Display files", Opgave3 },
-                { "Add folder", Opgave4 },
-                { "Search file", Opgave5 },
-                { "Other stuff ex JPEG", Opgave6 },
+                { "Add file", addFile },
+                { "Delete file", deleteFile },
+                { "Display files", displayFiles },
+                { "Add folder", addFolder },
+                { "Search file", searchFile },
+                { "Other stuff ex JPEG", smthElse },
             };
 
         // Create the menu

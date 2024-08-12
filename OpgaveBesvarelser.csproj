@@ -832,6 +832,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="FilManipulation\" />
     <Folder Include="Test\" />
   </ItemGroup>
 

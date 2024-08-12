@@ -8,6 +8,11 @@ partial class Program
 
     static void Main(string[] args)
     {
+        // Testing
+        //Program.Opgave9();
+
+
+        
         // Create Options dictionary (flexible updates itself based on 'opgaver' folder
         var options = new Dictionary<string, Action>();
 
@@ -32,5 +37,6 @@ partial class Program
         WindowMenu Menu = new WindowMenu(options, "Opgaver");
         Menu.Start();
         Console.Clear();
+        
     }
 }
